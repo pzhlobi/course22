@@ -16,6 +16,10 @@
         "storage": "64gb"
     },
     "runArgs": [
-        "--shm-size=16g"
-    ]
+        "--shm-size=16g",
+        "--userns=keep-id"
+    ],
+
+    "containerEnv": {"HOME": "/home/vscode"},
+    "containerUser": "vscode"
 }
